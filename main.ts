@@ -10,4 +10,4 @@ loadingBar.value = 0
 loadingBar.max = 4
 let loadingText = textsprite.create(`Loading ${project.name}...`)
 loadingText.left = 0
-loadingText.bottom = scene.screenHeight() - 1
+loadingText.bottom = scene.screenHeight() - 16
