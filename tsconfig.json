@@ -6,6 +6,5 @@
         "outDir": "built",
         "rootDir": "."
     },
-    "exclude": ["pxt_modules/**/*test.ts"],
-    "languageRestriction": "javascript-only"
+    "exclude": ["pxt_modules/**/*test.ts"]
 }
