@@ -3,7 +3,7 @@ namespace project {
     export let name = "T-OS"
 }
 // init system
-console.log(`Initialising ${project.name}`)
+console.log(`Initializing ${project.name}...`)
 let loadingBar = statusbars.create(scene.screenWidth(), 16, StatusBarKind.Health)
 loadingBar.bottom = scene.screenHeight()
 loadingBar.value = 0
