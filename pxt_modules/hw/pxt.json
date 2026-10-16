@@ -1,0 +1,21 @@
+{
+    "name": "hw",
+    "description": "Hardware definition - web-browser only",
+    "dependencies": {
+        "core": "*",
+        "screen": "*",
+        "mixer": "*",
+        "game": "*"
+    },
+    "files": [
+        "basepins.d.ts",
+        "config.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "4.1.25",
+        "pxt": "13.1.23"
+    },
+    "skipLocalization": true,
+    "hidden": true
+}

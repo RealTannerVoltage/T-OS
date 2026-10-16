@@ -3,6 +3,7 @@ namespace project {
     export let name = "T-OS"
 }
 // init system
+console.log(`Screen size ${screen.width}x${screen.height}`)
 scene.setBackgroundImage(assets.image`wallpaper1`)
 console.log(`Initializing ${project.name}...`)
 let loadingBar = statusbars.create(scene.screenWidth(), 16, StatusBarKind.Health)

@@ -8,6 +8,8 @@
         "BetterSettings": "github:s0m3randomguy/bettersettings#2023.5.1"
     },
     "files": [
+        "images.g.jres",
+        "images.g.ts",
         "main.blocks",
         "main.ts",
         "README.md",
