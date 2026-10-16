@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "arcade-text": "github:microsoft/arcade-text#v1.3.0",
-        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2"
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "BetterSettings": "github:s0m3randomguy/bettersettings#2023.5.1"
     },
     "files": [
         "main.blocks",
