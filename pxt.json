@@ -25,6 +25,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj",
-    "languageRestriction": "javascript-only"
+    "preferredEditor": "tsprj"
 }
