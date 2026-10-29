@@ -3,6 +3,7 @@ let usernames: Array<string>;
 const currentUsername = usernames[userID];
 let myMenu: Sprite;
 let menuUsers: miniMenu.MenuItem[] = [];
+console.log(`1 divided by 0 is ${float(1)/float(0)}`)
 function oobe() {
     music.play(music.createSong(assets.song`oobe`), music.PlaybackMode.LoopingInBackground);
     game.splash("Welcome to T-OS!");
