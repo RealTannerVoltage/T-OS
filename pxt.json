@@ -2,7 +2,9 @@
     "name": "T-OS",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0",
+        "BetterSettings": "github:sargedev/bettersettings#2023.5.1"
     },
     "files": [
         "main.blocks",

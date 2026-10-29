@@ -4,6 +4,12 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "wallpaper1"
     },
+    "song1": {
+        "data": "0078000408030106001c00010a006400f40164000004000000000000000000000000000000000256000000040002202408000c000224270e001000012412001400012418002000012728003000012230003800012438004000012244004800012c48004c0001294c005000012550005400012c54005800012958005c000125",
+        "mimeType": "application/mkcd-song",
+        "displayName": "oobe",
+        "namespace": "mySongs."
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
