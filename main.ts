@@ -6,6 +6,10 @@ function oobe () {
     music.play(music.stringPlayable("C D E F G A B C5 ", 800), music.PlaybackMode.UntilDone)
     blockSettings.writeStringArray("usernames", [username])
     menuUsers.push(miniMenu.createMenuItem(username))
+    userSelect()
+}
+function desktop () {
+    miniMenu.createMenuFromArray([miniMenu.createMenuItem("Settings")])
 }
 function userSelect () {
     myMenu = miniMenu.createMenuFromArray(menuUsers)
@@ -22,5 +26,5 @@ if (blockSettings.exists("usernames")) {
     }
     userSelect()
 } else {
-	
+	oobe()
 }
