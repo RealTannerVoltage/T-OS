@@ -1,7 +1,7 @@
 let userID: number;
 let usernames: Array<string> = [];
 const currentUsername = usernames[userID];
-let myMenu: Sprite;
+let userMenu: Sprite;
 let menuUsers: miniMenu.MenuItem[] = [];
 function oobe() {
     music.play(music.createSong(assets.song`oobe`), music.PlaybackMode.LoopingInBackground);
@@ -18,9 +18,10 @@ function desktop(userID = 0) {
     miniMenu.createMenuFromArray([miniMenu.createMenuItem("Settings")]);
 };
 function userSelect() {
-    myMenu = miniMenu.createMenuFromArray(menuUsers);
+    userMenu = miniMenu.createMenuFromArray(menuUsers);
 };
-console.log(`Running GUI at a resolution of ${scene.screenWidth()}x${scene.screenHeight()}`);
+console.log(`Running T-OS at a resolution of ${scene.screenWidth()}x${scene.screenHeight()}`);
+console.log(`Current installed RAM: ${null}`)
 scene.setBackgroundImage(assets.image`wallpaper1`);
 if (blockSettings.exists("usernames")) {
     menuUsers = [];
