@@ -15,7 +15,7 @@ function desktop(userID = 0) {
 function userSelect() {
     myMenu = miniMenu.createMenuFromArray(menuUsers);
 };
-let userID: int8;
+let userID: number;
 let usernames: Array<string>;
 const currentUsername = usernames[userID];
 let myMenu: Sprite = null;
