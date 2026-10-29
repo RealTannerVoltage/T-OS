@@ -13,6 +13,7 @@ function userSelect () {
 }
 let menuUsers: miniMenu.MenuItem[] = []
 let usernames: string[] = []
+scene.setBackgroundImage(assets.image`wallpaper1`)
 let userID: number;
 let currentUsername = usernames[userID]
 let userMenu: Sprite;

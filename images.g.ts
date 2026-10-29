@@ -3,6 +3,17 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
+            case "image2":
+            case "UserIcon":return img`
+. . . f f . . . 
+. . f f f f . . 
+. . f f f f . . 
+. . . f f . . . 
+. . . . . . . . 
+. . f f f f . . 
+. f f f f f f . 
+f f f f f f f f 
+`;
             case "image1":
             case "wallpaper1":return img`
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -125,17 +136,6 @@ baabbaabbbaaabbaabbaaabaaabaababbbbabbaabaabbbacabbbbacabbbaaabbaaaaabbb999cffff
 abbbaabbaaabbaaabbaaabaaabaabbbbbbbabbabbbabbaabbbbaaabbbaaaabaaabbb6999999bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 bbaaabbaaabbaaabbaaabaaabaaababbbbbbbbbbbbbbbabbabbaababaaabbbbbbbb969b99999cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 baaabbaaabbaaabbaaabaaabbaabaabbbbbbbbbbbbbbabbabbbbbbbbbbbbbbbbbbbbb6969999bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-`;
-            case "image2":
-            case "UserIcon":return img`
-. . . f f . . . 
-. . f f f f . . 
-. . f f f f . . 
-. . . f f . . . 
-. . . . . . . . 
-. . f f f f . . 
-. f f f f f f . 
-f f f f f f f f 
 `;
         }
         return null;
