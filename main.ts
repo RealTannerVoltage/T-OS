@@ -16,3 +16,10 @@ let usernames: string[] = []
 let userID: number;
 let currentUsername = usernames[userID]
 let userMenu: Sprite;
+if (blockSettings.exists("usernames")) {
+    usernames = blockSettings.readStringArray("usernames")
+    menuUsers.push(miniMenu.createMenuItem(usernames[0], assets.image`UserIcon`))
+    userSelect()
+} else {
+    oobe()
+}
