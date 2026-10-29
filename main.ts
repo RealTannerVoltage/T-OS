@@ -11,7 +11,7 @@ function userSelect () {
     myMenu = miniMenu.createMenuFromArray(menuUsers)
 }
 let myMenu: Sprite = null
-let username = ""
+let username = "User"
 let menuUsers: miniMenu.MenuItem[] = []
 console.log(`Running GUI at a resolution of ${scene.screenWidth()}x${scene.screenHeight()}`)
 scene.setBackgroundImage(assets.image`wallpaper1`)
