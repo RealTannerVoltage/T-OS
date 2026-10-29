@@ -1,3 +1,8 @@
+let userID: number;
+let usernames: Array<string>;
+const currentUsername = usernames[userID];
+let myMenu: Sprite = null;
+let menuUsers: miniMenu.MenuItem[] = [];
 function oobe() {
     music.play(music.createSong(assets.song`oobe`), music.PlaybackMode.LoopingInBackground);
     game.splash("Welcome to T-OS!");
@@ -15,18 +20,12 @@ function desktop(userID = 0) {
 function userSelect() {
     myMenu = miniMenu.createMenuFromArray(menuUsers);
 };
-let userID: number;
-let usernames: Array<string>;
-const currentUsername = usernames[userID];
-let myMenu: Sprite = null;
-let menuUsers: miniMenu.MenuItem[] = [];
 console.log(`Running GUI at a resolution of ${scene.screenWidth()}x${scene.screenHeight()}`);
 scene.setBackgroundImage(assets.image`wallpaper1`);
 if (blockSettings.exists("usernames")) {
     menuUsers = [];
     usernames = blockSettings.readStringArray("usernames");
     for (let value of usernames) {
-        ;
         menuUsers.push(miniMenu.createMenuItem(value));
     };
     userSelect();
