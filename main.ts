@@ -8,7 +8,7 @@ function oobe() {
     userSelect()
 }
 function userSelect() {
-    userMenu = miniMenu.createMenuFromArray(menuUsers)
+    userMenu = miniMenu.createMenuFromArray(menuUsers) as miniMenu.MenuSprite
 }
 let menuUsers: miniMenu.MenuItem[] = []
 let usernames: string[] = []
@@ -31,11 +31,11 @@ function startOS() {
 bootMenu = miniMenu.createMenu(
     miniMenu.createMenuItem("Start T-OS", assets.image`startIcon`), // Start T-OS
     miniMenu.createMenuItem("Recovery Mode", assets.image`recoveryIcon`) // Recovery Mode
-)
+) as miniMenu.MenuSprite
 bootMenu.onButtonPressed(miniMenu.Button.A, item => function () {
     if (item == "Start T-OS") {
         startOS()
     } else if (item == "Recovery Mode") {
         game.splash("Recovery Mode is not yet implemented.")
     }
-}
+})
