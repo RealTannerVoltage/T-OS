@@ -14,8 +14,8 @@ let menuUsers: miniMenu.MenuItem[] = []
 let usernames: string[] = []
 let userID: number;
 let currentUsername = usernames[userID]
-let userMenu: Sprite;
-let bootMenu: Sprite;
+let userMenu: miniMenu.MenuSprite;
+let bootMenu: miniMenu.MenuSprite;
 function startOS() {
     music.play(music.stringPlayable("C D E F G A B C5 ", 6000), music.PlaybackMode.UntilDone)
     scene.setBackgroundImage(assets.image`wallpaper1`)
@@ -32,10 +32,10 @@ bootMenu = miniMenu.createMenu(
     miniMenu.createMenuItem("Start T-OS", assets.image`startIcon`), // Start T-OS
     miniMenu.createMenuItem("Recovery Mode", assets.image`recoveryIcon`) // Recovery Mode
 )
-bootMenu.onMenuItemSelected(function (item: miniMenu.MenuItem) {
-    if (item.text == "Start T-OS") {
+bootMenu.onButtonPressed(miniMenu.Button.A, item => function () {
+    if (item == "Start T-OS") {
         startOS()
-    } else if (item.text == "Recovery Mode") {
+    } else if (item == "Recovery Mode") {
         game.splash("Recovery Mode is not yet implemented.")
     }
 }
