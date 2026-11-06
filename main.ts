@@ -3,9 +3,8 @@ function oobe () {
     game.splash("Welcome to T-OS!")
     usernames[0] = game.askForString("What's your name?")
     music.stopAllSounds()
-    music.play(music.stringPlayable("C D E F G A B C5 ", 800), music.PlaybackMode.UntilDone)
     blockSettings.writeStringArray("usernames", usernames)
-    menuUsers.push(miniMenu.createMenuItem(usernames[0]))
+    menuUsers.push(miniMenu.createMenuItem(usernames[0], assets.image`userIcon`))
     userSelect()
 }
 function userSelect () {
@@ -13,13 +12,14 @@ function userSelect () {
 }
 let menuUsers: miniMenu.MenuItem[] = []
 let usernames: string[] = []
+music.play(music.stringPlayable("C D E F G A B C5 ", 4000), music.PlaybackMode.UntilDone)
 scene.setBackgroundImage(assets.image`wallpaper1`)
 let userID: number;
 let currentUsername = usernames[userID]
 let userMenu: Sprite;
 if (blockSettings.exists("usernames")) {
     usernames = blockSettings.readStringArray("usernames")
-    menuUsers.push(miniMenu.createMenuItem(usernames[0], assets.image`UserIcon`))
+    menuUsers.push(miniMenu.createMenuItem(usernames[0], assets.image`userIcon`))
     userSelect()
 } else {
     oobe()

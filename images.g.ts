@@ -127,15 +127,15 @@ bbaaabbaaabbaaabbaaabaaabaaababbbbbbbbbbbbbbbabbabbaababaaabbbbbbbb969b99999cfff
 baaabbaaabbaaabbaaabaaabbaabaabbbbbbbbbbbbbbabbabbbbbbbbbbbbbbbbbbbbb6969999bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 `;
             case "image2":
-            case "UserIcon":return img`
-. . . f f . . . 
-. . f f f f . . 
-. . f f f f . . 
-. . . f f . . . 
+            case "userIcon":return img`
+. . . 2 2 . . . 
+. . 2 2 2 2 . . 
+. . 2 2 4 4 . . 
+. . . 4 4 . . . 
 . . . . . . . . 
-. . f f f f . . 
-. f f f f f f . 
-f f f f f f f f 
+. . 2 2 2 2 . . 
+. 2 2 2 2 2 4 . 
+4 4 4 4 4 4 4 4 
 `;
         }
         return null;
