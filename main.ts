@@ -35,6 +35,8 @@ bootMenu.setTitle("T-OS Boot Menu")
 miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.All, miniMenu.StyleProperty.Background, 15)
 miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.All, miniMenu.StyleProperty.Foreground, 1)
 miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Foreground, 2)
+miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Padding, 4)
+miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.Title, miniMenu.StyleProperty.Padding, 4)
 bootMenu.setDimensions(screen.width, screen.height)
 bootMenu.top = 0
 bootMenu.left = 0
