@@ -31,7 +31,15 @@ bootMenu = miniMenu.createMenu(
     miniMenu.createMenuItem("Start T-OS", assets.image`startIcon`), // Start T-OS
     miniMenu.createMenuItem("Recovery Mode", assets.image`recoveryIcon`) // Recovery Mode
 ) as miniMenu.MenuSprite
+bootMenu.setTitle("T-OS Boot Menu")
+miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.All, miniMenu.StyleProperty.Background, 15)
+miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.All, miniMenu.StyleProperty.Foreground, 1)
+miniMenu.setStyleProperty(bootMenu, miniMenu.StyleKind.Selected, miniMenu.StyleProperty.Foreground, 2)
+bootMenu.setDimensions(screen.width, screen.height)
+bootMenu.top = 0
+bootMenu.left = 0
 bootMenu.onButtonPressed(miniMenu.Button.A, function (item, selectedIndex) {
+    bootMenu.close()
     if (item == "Start T-OS") {
         startOS()
     } else if (item == "Recovery Mode") {
